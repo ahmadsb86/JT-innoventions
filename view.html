@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">  
+  <title>My Black Box</title>
+</head>
+<body>
+  <div class="flex flex-col justify-center items-center h-screen">
+      <h1 class="my-16 text-3xl text-teal-400" id="overview">All values in good range</h1>
+      <div class="w-1/2 fcenter chart " id="wrapper1">
+        <canvas id="myChart2" class="text-white my-16"></canvas>
+      </div>
+      <div class="w-1/2 fcenter hidden chart" id="wrapper2">
+        <canvas id="myChart" class="text-white hidden my-16"></canvas>
+      </div>
+      <div class="w-1/2 flex justify-center items-center h-full hidden chart" id="wrapper3">
+        <!-- <div class="mx-12">
+          <p class="c1">Air Temperature: <span class="text-white" id="AT"></span></p>
+          <p class="c2">Air Humidity: <span class="text-white" id="AH"></span></p>
+          <p class="c3">LDR: <span class="text-white" id="LDR"></span></p>
+          <p class="c4">Soil Humidity: <span class="text-white" id="SH"></span></p>
+        </div>
+        <div class="mx-12">
+          <p class="">Deriviation from optimum factors: <span class="text-white" id="s1"></span></p>
+          <p class="">Average : <span class="text-white" id="s2"></span></p>
+          <p class="">LDR: <span class="text-white" id="s3"></span></p>
+          <p class="">Soil Humidity: <span class="text-white" id="s4"></span></p>
+        </div> -->
+        <div class="mx-12">
+          <p class="c1 mb-4 font-bold">Air temperature</p>
+          <p class="text-teal-600">Value: <span id="s11"></span></p>
+          <p class="text-teal-600">Average: <span id="s12"></span></p>
+          <p class="text-teal-600">DFA: <span id="s13"></span></p>
+          <p class="text-teal-600">DFO: <span id="s14"></span></p>
+        </div>
+        <div class="mx-12 ">
+          <p class="c2 mb-4 font-bold">Air Humidity</p>
+          <p class="text-teal-600">Value: <span id="s21"></span></p>
+          <p class="text-teal-600">Average: <span id="s22"></span></p>
+          <p class="text-teal-600">DFA: <span id="s23"></span></p>
+          <p class="text-teal-600">DFO: <span id="s24"></span></p>
+        </div>
+        <div class="mx-12">
+          <p class="c3 mb-4 font-bold">Light</p>
+          <p class="text-teal-600">Value: <span id="s31"></span></p>
+          <p class="text-teal-600">Average: <span id="s32"></span></p>
+          <p class="text-teal-600">DFA: <span id="s33"></span></p>
+          <p class="text-teal-600">DFO: <span id="s34"></span></p>
+        </div>
+        <div class="mx-12">
+          <p class="c4 mb-4 font-bold">Soil Moisture</p>
+          <p class="text-teal-600">Value: <span id="s41"></span></p>
+          <p class="text-teal-600">Average: <span id="s42"></span></p>
+          <p class="text-teal-600">DFA: <span id="s43"></span></p>
+          <p class="text-teal-600">DFO: <span id="s44"></span></p>
+        </div>
+      </div>
+      <div class="fcenter" id="view-toggles">
+         <button to="wrapper1" class="text-white border-teal-600 border rounded-md px-12 py-3 mx-7 hover:-translate-y-2 transition-all bg-teal-600">Line Graph</button>
+         <button to="wrapper2" class="text-white border-teal-600 border rounded-md px-12 py-3 mx-7 hover:-translate-y-2 transition-all">Bar Chart</button>
+         <button to="wrapper3" class="text-white border-teal-600 border rounded-md px-12 py-3 mx-7 hover:-translate-y-2 transition-all">Statistics</button>
+      </div>
+    </div>
+  </body>
+  </html>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+<script src="script.js"></script>
+
+
+<!-- <div class="mr-32 text-left">
+  <p class="c1">Air Temperature: <span class="text-white" id="AT"></span></p>
+  <p class="c2">Air Humidity: <span class="text-white" id="AH"></span></p>
+  <p class="c3">LDR: <span class="text-white" id="LDR"></span></p>
+  <p class="c4">Soil Humidity: <span class="text-white" id="SH"></span></p>
+</div> -->

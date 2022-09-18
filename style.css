@@ -1,0 +1,91 @@
+:root {
+  --primary: #0db095;
+}
+
+
+@font-face {
+  font-family: JSF;
+  src: url(assets/fonts/JSF.ttf);
+}
+@font-face {
+  font-family: RW;
+  src: url(assets/fonts/RW.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(assets/fonts/Poppins.ttf);
+}
+
+body{
+  background-color: #1a1a1a;
+}
+
+*{
+  color: #ffffff;
+  font-family: RW;
+}
+
+.title{
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.subtitle{
+  margin:0;
+  margin-bottom: 3rem;
+}
+
+.f1{
+  font-family: JSF;
+}
+.f2{
+  font-family: RW;
+}
+.f3{
+  font-family: Poppins;
+}
+
+.c1{
+  color: rgba(255, 99, 132, 0.8)
+}
+.c2{
+  color:  rgba(54, 162, 235, 0.8)
+}
+.c3{
+  color: rgba(255, 206, 86, 0.8)
+}
+.c4{
+  color: rgba(75, 192, 192, 0.8)
+}
+
+.chart{
+  background: #232527;
+  border-radius: 20px;
+  width:100%;
+  max-width:1000px;
+  max-height: 700px;
+  padding: 50px;
+}
+
+.fcenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: RW;
+  height: 100vh;
+}
+
+.btn{
+  border: 0;
+  border-radius: 0.3rem;
+  background-color: #044f4f;
+  padding: 1rem;
+  transition: 0.2s transform;
+}
+
+.btn:hover{
+  transform: translateY(-5px);
+}
+
+canvas{
+  z-index: 0;
+}
